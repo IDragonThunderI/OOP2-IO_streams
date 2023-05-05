@@ -48,10 +48,10 @@ int main()
 
 	for (size_t i = 0; i < fibonacci.size(); i++)
 	{
-		cout << setw(2) << left << i + 1 << " - dec: " << setw(5) << fibonacci.at(i);
-		cout << hex << "   |   hex: " << setw(5) << left << fibonacci.at(i); 
-		cout << oct << "   |   oct: " << setw(5) << left << fibonacci.at(i);
-		cout <<	"   |   bin: " << setw(5) << left << toBinary(fibonacci.at(i)) << endl;
+		cout << left << setw(2) << i + 1 << " - dec: " << setw(5) << fibonacci.at(i);
+		cout << hex << "   |   hex: " << setw(5) << fibonacci.at(i); 
+		cout << oct << "   |   oct: " << setw(5) << fibonacci.at(i);
+		cout <<	dec << "   |   bin: " << setw(5) << toBinary(fibonacci.at(i)) << endl;
 	}
 
 	return 0;
